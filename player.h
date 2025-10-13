@@ -1,18 +1,20 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include "chips.h"
+#include <map>
 
 class Player{
 protected:
-std::string name;
-//vector balance
+    std::string name;
+
+    std::map<std::string, int> balance;
 public:
-Player();
-Player(std::string name /*, balance = preset */);
+    Player();
+    Player(std::string name);
 
-std::string getName();
+    std::string getName();
 
-void getBalance(); //std::vector<chips> getBalance();
+    std::map<std::string, int> getBalance();
 };
 
 

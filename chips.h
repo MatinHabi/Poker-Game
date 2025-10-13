@@ -5,11 +5,11 @@
 
 class Chips{
 protected:
-std::string colour;
-int vlaue;
+    std::string colour;
+    int value;
 public:
-Chips();
-Chips(std::string c);
+    Chips();
+    Chips(std::string c);
 };
 
 

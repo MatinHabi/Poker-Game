@@ -80,3 +80,6 @@ Players can use:
 - deals cards
 
  
+# ERROR INDEX
+101 -> Invalid chip colour
+102 -> Failed to find chip value
