@@ -1,15 +1,13 @@
 #ifndef CHIPS_H
 #define CHIPS_H
-#include <string>
-#include <vector>
 
-class Chips{
-protected:
-    std::string colour;
-    int value;
-public:
-    Chips();
-    Chips(std::string c);
+
+enum Chips{
+    BLACK = 100,
+    GREEN = 25,
+    BLUE = 10,
+    RED = 5,
+    WHITE = 1
 };
 
 
