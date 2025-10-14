@@ -7,7 +7,6 @@
 class Player{
 protected:
     std::string name;
-
     std::map<Chips, int> balance;
 public:
     Player();
