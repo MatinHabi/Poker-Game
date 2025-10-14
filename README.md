@@ -67,9 +67,8 @@ Players can use:
 - 52 cards
 - func: shuffle
 - func: get top card
-**Chips**
-- int [chipcolor] = [insertvalue]
-- func: dealChips
+**Enum Chips**
+
 **Player**
 - has chips
 - recieves 2 cards

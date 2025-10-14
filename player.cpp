@@ -1,7 +1,7 @@
 #include "player.h"
 Player::Player(){}
 Player::Player(std::string n): name(n){
-    balance = {{BLACK, 1}, {GREEN, 1}, {BLUE, 1}, {RED, 1}, {WHITE, 1}};
+    balance = {{BLACK, 1}, {GREEN, 2}, {BLUE, 3}, {RED, 4}, {WHITE, 5}};
 }
 
 std::string Player::getName(){return name;}
