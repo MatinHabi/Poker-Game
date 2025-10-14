@@ -1,4 +1,6 @@
 #include "helper.h"
+#include <iostream>
+using namespace std;
 
 void Helper::printBalance(Player* P1){
     auto x = P1->getBalance();
