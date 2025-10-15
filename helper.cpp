@@ -12,3 +12,9 @@ void Helper::printBalance(Player* P1){
 
         cout <<  "Total: " << x[BLACK]*BLACK + x[GREEN]*GREEN + x[BLUE]*BLUE + x[RED]*RED +  x[WHITE]*WHITE << endl;
 }
+
+void Helper::printCards(Cards* cards){
+    for(auto i : cards->getCards()){
+        std::cout << i << "\n";
+    }
+}
