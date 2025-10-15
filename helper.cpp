@@ -15,6 +15,7 @@ void Helper::printBalance(Player* P1){
 
 void Helper::printCards(Cards* cards){
     for(auto i : cards->getCards()){
-        std::cout << i << "\n";
+        cout << i << " ";
     }
+    cout << "\n";
 }
