@@ -4,7 +4,7 @@
 Cards::Cards(){
     //hearts
     cards.push_back("A♥");
-    for(int i = 1 ; i <= 10 ; i++){
+    for(int i = 2 ; i <= 10 ; i++){
         std::string suit = "♥";
         cards.push_back(std::to_string(i) + suit);
     }
@@ -13,7 +13,7 @@ Cards::Cards(){
     cards.push_back("J♥");
     //spades
     cards.push_back("A♠");
-    for(int i = 1 ; i <= 10 ; i++){
+    for(int i = 2 ; i <= 10 ; i++){
         std::string suit = "♠";
         cards.push_back(std::to_string(i) + suit);
     }
@@ -22,7 +22,7 @@ Cards::Cards(){
     cards.push_back("J♠");
     //diamonds
     cards.push_back("A♦");
-    for(int i = 1 ; i <= 10 ; i++){
+    for(int i = 2 ; i <= 10 ; i++){
         std::string suit = "♦";
         cards.push_back(std::to_string(i) + suit);
     }
@@ -31,7 +31,7 @@ Cards::Cards(){
     cards.push_back("J♦");
     //clubs
     cards.push_back("A♣");
-    for(int i = 1 ; i <= 10 ; i++){
+    for(int i = 2 ; i <= 10 ; i++){
         std::string suit = "♣";
         cards.push_back(std::to_string(i) + suit);
     }
