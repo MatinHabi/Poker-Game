@@ -1,5 +1,6 @@
 #include "helper.h"
 #include <iostream>
+#include <string>
 #include <map>
 using namespace std;
 
@@ -24,8 +25,11 @@ void Helper::printCards(Cards* cards){
 bool Helper::deckCheck(Cards* C){
     auto original = C->getCards();
     auto check = C->getShuffledCards();
-
-    for(int i = 0 ; i < original.size() ; i++){
-
+    map<int, std::string> deck;
+    //test print
+    for(auto& i : deck){
+        cout << i.first << " " << i.second << " ";
     }
+    cout <<"\n";
+    return true;
 }
