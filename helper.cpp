@@ -24,8 +24,8 @@ void Helper::printCards(Cards* cards){
 bool Helper::deckCheck(Cards* C){
     auto original = C->getCards();
     auto check = C->getShuffledCards();
-    
-    for(int i = 0 ; i < original.size()-1 ; i++){
+
+    for(int i = 0 ; i < original.size() ; i++){
 
     }
 }
