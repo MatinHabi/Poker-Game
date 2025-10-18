@@ -1,5 +1,6 @@
 #include "helper.h"
 #include <iostream>
+#include <map>
 using namespace std;
 
 void Helper::printBalance(Player* P1){
@@ -18,4 +19,13 @@ void Helper::printCards(Cards* cards){
         cout << i << " ";
     }
     cout << "\n";
+}
+
+bool Helper::deckCheck(Cards* C){
+    auto original = C->getCards();
+    auto check = C->getShuffledCards();
+    
+    for(int i = 0 ; i < original.size()-1 ; i++){
+
+    }
 }

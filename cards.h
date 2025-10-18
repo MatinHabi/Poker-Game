@@ -6,10 +6,11 @@
 class Cards{
 protected:
     std::vector<std::string> cards;
-    std::vector<std::string> suffledDeck;
+    std::vector<std::string> shuffledDeck;
 public:
     Cards();
     std::vector<std::string> getCards();
+    std::vector<std::string> getShuffledCards();
     void shuffle();
 };
 
