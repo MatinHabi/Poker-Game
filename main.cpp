@@ -8,4 +8,6 @@ int main(){
     Cards *card = new Cards();
     Helper::printBalance(P1);
     Helper::printCards(card);
+    card->shuffle();
+    //Helper::printCards(card);
 }
