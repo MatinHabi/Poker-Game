@@ -8,23 +8,8 @@ int main(){
     Cards *card = new Cards();
     Helper::printBalance(P1);
     Helper::printCards(card);
-    // cout << "shuffled\n";
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // card->shuffle();
-    // Helper::printCards(card);
-
+    cout << "shuffled\n";
+    card->shuffle();
     Helper::deckCheck(card);
+    
 }
