@@ -7,6 +7,7 @@ using namespace std;
 int main(){
     Player *P1 = new Player("matin");
     Cards *card = new Cards();
+    
     Helper::printBalance(P1);
     Helper::printCards(card);
     cout << "shuffled\n";
