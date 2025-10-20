@@ -18,5 +18,9 @@ int main(){
     dealer->dealCards(P1);
     cout << "Player show hands:\n";
     P1->showHand();
-    
+
+    dealer->resetCards(card);
+    dealer->dealCards(P1);
+    cout << "Player show hands:\n";
+    P1->showHand();
 }

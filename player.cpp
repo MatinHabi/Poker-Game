@@ -18,4 +18,7 @@ void Player::showHand(){
         std::cout << i << " ";
     }
     std::cout << "\n";
+    for(auto i : cards){
+        cards.pop_back();
+    }
 }

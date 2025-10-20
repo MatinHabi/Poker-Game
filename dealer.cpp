@@ -20,3 +20,18 @@ void Dealer::dealCards(Player* p){
     }
     p->cards = ret;
 }
+
+void Dealer::resetCards(Cards* c){
+    while(!dealerCards.empty()){
+        dealerCards.pop();
+    }
+    c->shuffle();
+    auto x = c->getShuffledCards();
+    if(x.empty()){
+        std::cout << "No shuffled deck exists!\n";
+        return;
+    }
+    for(auto i : x){
+        dealerCards.push(i);
+    }
+}

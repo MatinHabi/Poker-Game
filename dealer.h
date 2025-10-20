@@ -9,6 +9,7 @@ std::queue<std::string> dealerCards;
 public:
     Dealer(Cards* c);
     void dealCards(Player* p);
+    void resetCards(Cards* c);
 };
 
 #endif

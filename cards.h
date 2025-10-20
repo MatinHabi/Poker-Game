@@ -7,6 +7,7 @@ class Cards{
 protected:
     std::vector<std::string> cards;
     std::vector<std::string> shuffledDeck;
+    friend class Dealer;
 public:
     Cards();
     std::vector<std::string> getCards();
