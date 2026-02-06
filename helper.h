@@ -8,8 +8,8 @@ class Helper{
 public:
     void static printBalance(Player* P1);
     void static printCards(Cards* C);
-    int static getBalance(Player* P1);
-    int static updateBalance(Player* P1, int amount);
+    int static getBalance(Player* p1);
+    int static updateBalance(Player* p1, int amount);
     bool static deckCheck(Cards*C);
 };
 

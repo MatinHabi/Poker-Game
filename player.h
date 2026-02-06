@@ -1,6 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include "chips.h"
+#include "helper.h"
 #include <string>
 #include <vector>
 #include <map>

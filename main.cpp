@@ -4,6 +4,7 @@
 #include "dealer.h"
 #include "player.h"
 #include "cards.h"
+#include "helper.h"
 #include "hands.h"
 
 using namespace std;
@@ -28,6 +29,7 @@ void evaluateHand(const vector<string>& hand, const vector<string>& community) {
 
 int main() {
     // 1. Setup
+    Helper *helper = new Helper();
     Player* p1 = new Player("Player 1");
     Cards* deck = new Cards();
     Dealer* dealer = new Dealer(deck);
@@ -102,7 +104,8 @@ int main() {
         cout << "\nPlay again? (1=Yes, 0=No): ";
         cin >> playing;
     }
-
+    
+    delete helper;
     delete p1;
     delete deck;
     delete dealer;
