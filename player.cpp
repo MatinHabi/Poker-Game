@@ -1,13 +1,15 @@
 #include "player.h"
+#include "helper.h"
 #include <iostream>
 Player::Player(){}
 Player::Player(std::string n): name(n){
-    balance = {{BLACK, 1}, {GREEN, 2}, {BLUE, 3}, {RED, 4}, {WHITE, 5}};
+    chips = {{BLACK, 1}, {GREEN, 2}, {BLUE, 3}, {RED, 4}, {WHITE, 5}};
+    balance = Helper::getBalance(this);
 }
 
 std::string Player::getName(){return name;}
 
-std::map <Chips, int> Player::getBalance(){return balance;}
+std::map <Chips, int> Player::getChips(){return chips;}
 
 void Player::recieveCard(std::string x){cards.push_back(x);}
 

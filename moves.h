@@ -1,11 +1,7 @@
 #ifndef MOVES_H
 #define MOVES_H
+#include <unordered_map>
 
-enum Moves{
-    CHECK = 1,
-    RAISE,
-    FOLD,
-    CALL
-};
+enum MoveType {FOLD, CHECK, CALL, RAISE};
 
 #endif

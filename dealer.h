@@ -8,6 +8,7 @@
 class Dealer{
 protected:
     std::queue<std::string> dealerCards;
+    friend class Hands;
 public:
     Dealer(Cards* c);
 
