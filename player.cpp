@@ -7,7 +7,9 @@ Player::Player(std::string n): name(n){
 
 std::string Player::getName(){return name;}
 
-std::map<Chips, int> Player::getBalance(){return balance;}
+std::map <Chips, int> Player::getBalance(){return balance;}
+
+void Player::recieveCard(std::string x){cards.push_back(x);}
 
 void Player::showHand(){
     if(cards.empty()){

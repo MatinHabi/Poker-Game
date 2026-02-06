@@ -8,7 +8,7 @@
 class Player{
 protected:
     std::string name;
-    std::map<Chips, int> balance;
+    std::map <Chips, int> balance;
     std::vector<std::string> cards;
     friend class Dealer;
 public:
@@ -16,7 +16,9 @@ public:
     Player(std::string name);
 
     std::string getName();
-
+    
+    void recieveCard(std::string);
+    
     void showHand();
 
     std::map<Chips, int> getBalance();
